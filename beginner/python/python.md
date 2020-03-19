@@ -6,16 +6,16 @@
 &emsp;&emsp;第一种方法，启动Windows操作系统命令行工具( <Windows系统安装目录>\system32\cmd.exe)，在控制台中输入“Python”，在命令提示符>>>后输入如下程序代码：  
 &emsp;&emsp;print("Hello World")  
 &emsp;&emsp;按Enter键后显示输出结果"Hello World”。  
-![1](https://github.com/HMH-123/laboratory/blob/master/python/1.png?raw=true)  
+![1](https://github.com/cqnu2020/NLP/blob/hemiaohui/beginner/python/pictures/1.png?raw=true)  
 &emsp;&emsp;在>>>提示符后输入exit()或者quit()可 以退出Python 运行环境。  
 &emsp;&emsp;第二种方法，通过调用安装的IDLE来启动Python 运行环境。IDLE是Python软件包自带的集成开发环境，可以在Windows“开始”菜单中搜索关键词“IDLE"找到IDLE的快捷方式。如图展示了IDLE环境中运行Hello World程序的效果。  
-![2](https://github.com/HMH-123/laboratory/blob/master/python/2.png?raw=true)  
+![2](https://github.com/cqnu2020/NLP/blob/hemiaohui/beginner/python/pictures/2.png?raw=true)  
 2. 文件式启动和运行方法  
 &emsp;&emsp;文件式也有两种运行方法，与交互式相对应。  
 &emsp;&emsp;第一种方法， 按照Pyhon的语法格式编写代码，并保存为.py 形式的文件(以Hello World程序为例，将代码保存成文件hello.py)。Python 代码可以在任意编辑器中编写，对于百行以内规模的代码建议使用Python安装包中的IDLE编辑器。然后，打开Windows的命令行(cmd.exe)，进入hello.py,文件所在目录，运行Pyhon程序文件获得输出，如图：  
-![3](https://github.com/HMH-123/laboratory/blob/master/python/3.png?raw=true)  
+![3](https://github.com/cqnu2020/NLP/blob/hemiaohui/beginner/python/pictures/3.png?raw=true)  
 &emsp;&emsp;第二种方法，打开IDLE，按快捷键Ctrl+N打开一个新窗口，或在菜单中选择File→New File选项。这个新窗口不是交互模式，它是一个具备Python 语法高亮辅助的编辑器，可以进行代码编辑。在其中输入Python代码，例如，输入Hello World程序并保存为hello.py文件，如图所示。按快捷键F5,或在菜单中选择Run→Run Module选项运行该文件。    
-![4](https://github.com/HMH-123/laboratory/blob/master/python/4.png?raw=true)  
+![4](https://github.com/cqnu2020/NLP/blob/hemiaohui/beginner/python/pictures/4.png?raw=true)  
 3. 启动和运行方法推荐  
 &emsp;&emsp;交互式和文件式共有4种Python程序运行方法，其中，最常用且最重要的是采用IDLE的文件式方法。IDLE是一个简单有效的集成开发环境，无论交互式或文件式，它都有助于快23速编写和调试代码，它是小规模Python 软件项目的主要编写工具。  
 ## 基本数据类型  
@@ -247,11 +247,12 @@ False
 &emsp;&emsp;<模板字符串>. format (<逗号分隔的参数>)     
 &emsp;&emsp;模板字符串由一系 列槽组成，用来控制修改字符串中嵌入值出现的位置，其基本思想是将format(方法中逗号分隔的参数按照序号关系替换到模板字符串的槽中。槽用大括号({}) 表示，如果大括号中没有序号，则按照出现顺序替换，如图所示。    
 &emsp;&emsp;printf()函数是C语言中向控制台输出信息的主要函数，类似Python语言中的print()函数。如果大括号中指定了使用参数的序号，按照序号对应参数替换，如图所示，参数从0开始编号。调用format(方法后会返回一个新的字符串。例如：   
+
 ```
 >>>"{}:计算机{}的cpu占用率为{}%。".format("2016-12-31","PYTHON",10)
 '2016-12-31:计算机PYTHON的cpu占用率为10%。'
 ```
-![5](https://github.com/HMH-123/laboratory/blob/master/python/5.jpg?raw=true)      
+<img src="https://github.com/cqnu2020/NLP/blob/hemiaohui/beginner/python/pictures/5.jpg?raw=true" alt="5" style="zoom: 33%;" />      
 ```python
 >>>"{}{}{}".format("圆周率是",3.1415926,"...")
 '圆周率是3.1415926...'
